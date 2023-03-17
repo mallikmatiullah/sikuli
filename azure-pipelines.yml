@@ -14,12 +14,21 @@
 #   displayName: 'Run a one-line script'
 
  
+# jobs:
+# - job: RunOnLocalMachine
+#   pool:
+#     name: MySelfHostedPool
+#   steps:
+#   - script: |
+#       cd /path/to/my/project
+#       npm install
+#       npm run build
 jobs:
 - job: RunOnLocalMachine
   pool:
     name: MySelfHostedPool
   steps:
   - script: |
-      cd /path/to/my/project
+      cd C:\path\to\my\project
       npm install
       npm run build
