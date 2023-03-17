@@ -17,7 +17,7 @@
 # jobs:
 # - job: RunOnLocalMachine
 #   pool:
-#     name: MySelfHostedPool
+#     name: 
 #   steps:
 #   - script: |
 #       cd /path/to/my/project
@@ -26,7 +26,7 @@
 jobs:
 - job: RunOnLocalMachine
   pool:
-    name: MySelfHostedPool
+    name: MALIK
   steps:
   - script: |
       cd C:\path\to\my\project
