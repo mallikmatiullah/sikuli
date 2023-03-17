@@ -14,10 +14,12 @@
 #   displayName: 'Run a one-line script'
 
  
- jobs:
-- job: MyJob
+jobs:
+- job: RunOnLocalMachine
   pool:
     name: MySelfHostedPool
   steps:
-  - script: echo "Hello World!"
-  displayName: 'Run a multi-line script'
+  - script: |
+      cd /path/to/my/project
+      npm install
+      npm run build
