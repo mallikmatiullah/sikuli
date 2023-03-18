@@ -29,6 +29,5 @@ jobs:
     name: default
   steps:
   - script: |
-      cd C:\path\to\my\project
-      npm install
-      npm run build
+      cd C:\Users\malik\Downloads
+      mkdir testfolder
